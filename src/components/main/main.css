@@ -1,0 +1,162 @@
+/* -------------------------------------Secondary-Navbar--------------------------------------- */
+.secondary_navbar {
+    height: 27px !important;
+    background-color: var(--secondary-nav-color) !important;
+}
+
+.secondary_nav_service {
+    font-size: 12px !important;
+    color: var(--full-white) !important;
+}
+
+.secondary_nav_link {
+    font-size: 12px !important;
+}
+
+.secondary_nav_link .nav-link {
+    color: var(--full-white) !important;
+}
+
+/* -------------------------------------Main-Navbar--------------------------------------- */
+
+.main_navbar {
+    border-bottom: 1px solid rgba(29, 38, 42, 0.16);
+}
+
+.main_nav_brand {
+    display: flex;
+    font-weight: 600;
+    justify-content: center;
+    height: 65px;
+    width: 71px;
+    border-radius: 50%;
+    background-color: var(--secondary-color);
+    padding: -3px;
+}
+
+.main_nav_link {
+    flex-direction: column !important;
+}
+
+.num {
+    font-size: 11px;
+    color: var(--full-black);
+}
+
+.fa-phone {
+    color: var(--brown-color) !important;
+}
+
+.address {
+    font-size: 13px;
+    font-weight: 600;
+    color: var(--full-black);
+}
+
+.fa-location-dot {
+    color: var(--brown-color) !important;
+}
+
+.searchfield {
+    width: 522px;
+}
+
+.searchbtn {
+    background-color: white !important;
+    color: black;
+    /* margin-left: 2px; */
+    border-color: lightgrey;
+}
+
+/* -------------------------------------Banner-Section--------------------------------------- */
+
+.top_image {
+    padding-top: 31px;
+    padding-bottom: 40px;
+}
+
+/* -------------------------------------Coupon-Section--------------------------------------- */
+.rect_row{
+    padding-top: 20px;
+}
+.rect_one {
+    border-radius: 10px;
+    margin-right: 29px;
+    width: 250px;
+    height: 100px;
+    background-color: var( --yellow-color);
+}
+
+.rect_two{
+    border-radius: 10px;
+    margin-right: 29px;
+    width: 250px;
+    height: 100px;
+    background-color:var(--light-yellow);
+}
+
+.rect_three{
+    border-radius: 10px;
+    margin-right: 29px;
+    width: 250px;
+    height: 100px;
+    background-color: var(--brown-color);
+}
+
+.rect_four{
+    border-radius: 10px;
+    margin-right: 29px;
+    width: 250px;
+    height: 100px;
+    background-color: var(--light-pink);
+}
+
+.front-circle {
+    width: 43px;
+    height: 43px;
+    border-radius: 50% 50% 50% 50%;
+    background-color: var( --body-color);
+    position: absolute;
+    margin-top: 29px;
+    margin-left: -15px;
+}
+.back-circle{
+    margin-left: 228px;
+    width: 43px;
+    height: 43px;
+    border-radius: 50% 50% 50% 50%;
+    background-color: var( --body-color);
+    position: absolute;
+    margin-top: 3px;
+}
+
+.discount{
+    padding-left: 70px;
+    font-size: 30px;
+    margin-top: -18px;
+    color: var(--full-white);
+}
+
+.code{
+    margin-top: 56px;
+    margin-left: -132px;
+    color: var(--full-white);
+}
+
+.code_font{
+    font-size: 10px !important;
+}
+.copy_code{
+    margin-left: 48px;
+    margin-top: 55px;
+    background-color: var(--light-black);
+    color: var(--full-white);
+    padding-top: 2px;
+    padding-right: 10px;
+    padding-left: 10px;
+    padding-bottom: 0px;
+}
+
+.code_copy{
+    font-size: 10px !important;
+}
