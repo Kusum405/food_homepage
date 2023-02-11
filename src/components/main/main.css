@@ -18,6 +18,52 @@
 }
 
 /* -------------------------------------Main-Navbar--------------------------------------- */
+.navbar-expand .navbar-collapse {
+    display: flex!important;
+    flex-basis: auto;
+    justify-content: space-between;
+}
+
+.search{
+    width: 60% !important;
+}
+
+.login{
+    font-size: 15px;
+    font-weight: 700;
+    margin-right: 30px;
+    margin-top: -6px;
+ 
+}
+
+.fa-cart-shopping{
+    margin-top: 5px;
+    margin-right: 20px;
+    /* background-color: aquamarine; */
+    border-radius: 50px;
+    padding: 7px;
+    border: 1px solid var(--secondary-color);
+    font-size: 12px;
+}
+
+.notification{
+    background-color: var(--delete-color);
+    font-size: -4px;
+    height: 13px;
+    padding-top: 1px;
+    padding-left: 0px;
+    padding-right: 3px;
+    border-radius: 50px;
+    text-align: center;
+    color: white;
+    margin-left: -28px;
+}
+
+.note{
+    font-size: 10px;
+    margin-top: -1px;
+    margin-left: 3px;
+}
 
 .main_navbar {
     border-bottom: 1px solid rgba(29, 38, 42, 0.16);
@@ -61,12 +107,10 @@
     /* width: 522px; */
 }
 
-.searchbtn {
-    background-color: white !important;
-    color: black;
-    /* margin-left: 2px; */
-    border-color: lightgrey;
-}
+
+
+
+
 
 /* -------------------------------------Banner-Section--------------------------------------- */
 /* .main{
@@ -247,29 +291,174 @@
     margin-top: 40px;
     margin-left: 143px;
 }
+
 /* -------------------------------------Best-Deal-Section--------------------------------------- */
-.specialpizza{
+.specialpizza {
     width: 347px;
     height: auto;
     margin-right: 27px;
     padding-top: 20px;
 }
-.burger{
+
+.burger {
     width: 347px;
     height: auto;
     margin-right: 27px;
     padding-top: 20px;
 }
-.weekendfood{
+
+.weekendfood {
     width: 349px;
     height: 262px;
     /* margin-right: 27px; */
     padding-top: 20px;
 }
+
 /* -------------------------------------Popular-Food-Section--------------------------------------- */
-.popular_food_row{
-    padding-top: 40px;
+.popular_food_row {
+    padding-top: 30px;
 }
+
+.food_card {
+    width: 18rem;
+    margin-right: 14px;
+    border-radius: 10px;
+}
+
+.kXteup {
+    display: none !important;
+}
+
+.Slxdj {
+    display: none !important;
+}
+
+.cVXxbE {
+    background-color: var(--yellow-color) !important;
+    box-shadow: 0 0 1px 3px var(--yellow-color) !important;
+}
+
+.cVXxbE:hover,
+.cVXxbE:focus {
+    box-shadow: 0 0 1px 3px var(--yellow-color) !important;
+}
+
+.food_card_title {
+    font-size: 16px;
+    margin-top: -5px;
+}
+
+.food_card_img {
+    height: 151px;
+    width: auto;
+}
+
+.food_card_body {
+    padding-bottom: 1px;
+}
+
+.food_price {
+    font-weight: bold;
+}
+
+.cut_price {
+    font-size: 12px;
+    color: var(--secondary-color) !important;
+    margin-top: -8px;
+}
+
+.add {
+    margin-left: 135px;
+    font-size: 14px;
+    margin-top: -87px;
+    background-color: var(--full-white);
+    color: var(--yellow-color);
+    border: 1px solid var(--yellow-color);
+    padding-left: 24px;
+    padding-right: 28px;
+}
+
+.add:hover {
+    background-color: var(--yellow-color);
+    color: var(--full-white);
+    border: 1px solid var(--yellow-color);
+
+}
+
+.ribbon {
+    width: 87px;
+    height: 33px;
+    background-color: var(--yellow-color);
+    position: relative;
+    margin-top: -1px;
+    font-size: 17px;
+    margin-left: -16px;
+    padding: 6px;
+    color: var(--full-white);
+}
+
+.ribbon::before {
+    content: "";
+    position: absolute;
+    right: -20px;
+    top: 0;
+    border-top: 18px solid transparent;
+    border-bottom: 15px solid transparent;
+    border-left: 20px solid var(--yellow-color);
+}
+
+.ribbon span {
+    text-align: center;
+}
+
+/* -------------------------------------Popular-Delicacies-Section--------------------------------------- */
+.popular_delic_row{
+    padding-top: 20px;
+    padding-bottom: 30px;
+}
+
+.delic_img{
+    height: 300px;
+    width: 462px;
+}
+.delic_prgh{
+    font-size: 13px;
+    color: var(--white-color);
+}
+
+.readmore{
+    background-color: var(--yellow-color);
+    color: var(--full-white);
+    border:1px solid var(--yellow-color);
+}
+
+.readmore:hover,.readmore:focus{
+    background-color: var(--yellow-color);
+    color: var(--full-white);
+    border:1px solid var(--yellow-color);
+}
+
+.quantity{
+    margin-left: 353px;
+    font-size: 14px;
+}
+
+.fa-minus{
+    background-color: var(--brown-color);
+    color: var(--full-white);
+    border-radius: 50px;
+    padding: 4px;
+    font-size: 10px;
+}
+.fa-plus{
+    background-color: var(--brown-color);
+    color: var(--full-white);
+    border-radius: 50px;
+    padding: 4px;
+    font-size: 10px;
+}
+
+
 
 /* -------------------------------------Footer-Section--------------------------------------- */
 footer {

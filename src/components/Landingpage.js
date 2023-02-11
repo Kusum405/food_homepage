@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import Main_navbar from './main/Main_navbar';
-import { Container, Image, Card, Row, Col, Button} from 'react-bootstrap';
+import { Container, Image, Card, Row, Col, Button } from 'react-bootstrap';
 import Footer from './main/Footer';
 import Carousel from 'react-elastic-carousel';
 
@@ -129,38 +129,161 @@ const Landingpage = () => {
       name: "weekendfood",
     },
   ]
-const food_cards=[
-  {
-    id: 1,
-    image: "./uploads/specialpizza.png",
-    name: "specialpizza",
-  },
-  {
-    id: 2,
-    image: "./uploads/burger.png",
-    name: "burger",
-  },
-  {
-    id: 3,
-    image: "./uploads/weekendfood.png",
-    name: "weekendfood",
-  },
-  {
-    id: 3,
-    image: "./uploads/weekendfood.png",
-    name: "weekendfood",
-  },
-  {
-    id: 4,
-    image: "./uploads/weekendfood.png",
-    name: "weekendfood",
-  },
-  {
-    id: 5,
-    image: "./uploads/weekendfood.png",
-    name: "weekendfood",
-  },
-]
+  const food_cards = [
+    {
+      id: 1,
+      image: "./uploads/chessepizza.png",
+      title: "Cheese Pizza - with extra toppines and cheese",
+      discount: "50% OFF",
+      price: "Rs 500",
+    },
+    {
+      id: 2,
+      image: "./uploads/grove.png",
+      title: "Koconut Grove - Super Delicious Food ",
+      price: "Rs 620",
+    },
+    {
+      id: 3,
+      image: "./uploads/chburger.png",
+      title: "Chiken Hamburger - French Fries and KFC",
+      price: "Rs 256",
+    },
+    {
+      id: 4,
+      image: "./uploads/thakalikhana.png",
+      title: "Thakhali Khana Set - Nepali Food",
+      price: "Rs 500",
+    },
+    {
+      id: 5,
+      image: "./uploads/chburger.png",
+      title: "Chiken Hamburger - French Fries and KFC",
+      price: "Rs 500",
+    },
+  ]
+
+  const breakfast_cards = [
+    {
+      id: 1,
+      image: "./uploads/break1.png",
+      title: "Tosted Bread, Massed Eggs, Milk rice",
+      discount: "50% OFF",
+      price: "Rs 500",
+    },
+    {
+      id: 2,
+      image: "./uploads/break2.png",
+      title: "Fruits, Rosted Bread, Juice, with cheery",
+      discount: "15% OFF",
+      price: "Rs 620",
+    },
+    {
+      id: 3,
+      image: "./uploads/break3.png",
+      title: "Chiken suses, tosted bread, beans with tamato ",
+      price: "Rs 256",
+    },
+    {
+      id: 4,
+      image: "./uploads/break4.png",
+      title: "Buff rosted, french fries, green vegs with picles",
+      discount: "10% OFF",
+      price: "Rs 500",
+    },
+    {
+      id: 5,
+      image: "./uploads/chburger.png",
+      title: "Chiken Hamburger - French Fries and KFC",
+      price: "Rs 500",
+    },
+    {
+      id: 6,
+      image: "./uploads/chburger.png",
+      title: "Chiken Hamburger - French Fries and KFC",
+      price: "Rs 500",
+    },
+    {
+      id: 7,
+      image: "./uploads/chburger.png",
+      title: "Chiken Hamburger - French Fries and KFC",
+      price: "Rs 500",
+    },
+    {
+      id: 8,
+      image: "./uploads/chburger.png",
+      title: "Chiken Hamburger - French Fries and KFC",
+      price: "Rs 500",
+    },
+    {
+      id: 9,
+      image: "./uploads/chburger.png",
+      title: "Chiken Hamburger - French Fries and KFC",
+      price: "Rs 500",
+    },
+  ]
+
+  const drink_cards = [
+    {
+      id: 1,
+      image: "./uploads/drink1.png",
+      title: "Choco milk smothi ",
+      discount: "50% OFF",
+      price: "Rs 500",
+    },
+    {
+      id: 2,
+      image: "./uploads/drink2.png",
+      title: "CocoCoal 1-ML",
+      discount: "15% OFF",
+      price: "Rs 620",
+    },
+    {
+      id: 3,
+      image: "./uploads/drink3.png",
+      title: "Orange juice with ice ",
+      price: "Rs 256",
+    },
+    {
+      id: 4,
+      image: "./uploads/break4.png",
+      title: "Red bear by Arana ",
+      discount: "10% OFF",
+      price: "Rs 500",
+    },
+    {
+      id: 5,
+      image: "./uploads/glassdrink.png",
+      title: "Red bear by Arana",
+      price: "Rs 500",
+    },
+    {
+      id: 6,
+      image: "./uploads/drink2.png",
+      title: "CocoCoal 1-ML",
+      discount: "15% OFF",
+      price: "Rs 620",
+    },
+    {
+      id: 7,
+      image: "./uploads/drink3.png",
+      title: "Orange juice with ice ",
+      price: "Rs 256",
+    },
+    {
+      id: 8,
+      image: "./uploads/drink2.png",
+      title: "CocoCoal 1-ML",
+      discount: "15% OFF",
+      price: "Rs 620",
+    },
+    {
+      id: 9,
+      image: "./uploads/juice.png",
+      title: "Orange juice with ice ",
+      price: "Rs 256",
+    },
+  ]
   return (
     <>
       <Main_navbar />
@@ -245,32 +368,111 @@ const food_cards=[
           <Col xs={1}>
             <h5>See All</h5>
           </Col>
-          <div className='d-flex'>
-          <Carousel itemsToShow={4}>
-            {
-              food_cards.map((food_cards) => {
-                return  <Item  key={food_cards.id}>
-                  <Card style={{ width: '18rem', marginRight:'10px' }}>
-                    <Card.Img variant="top" src={food_cards.image} />
-                    <Card.Body>
-                      <Card.Title>Card Title</Card.Title>
+          <div className='popular_food_row'>
+            <Carousel itemsToShow={4}>
+              {
+                food_cards.map((food_cards) => {
+                  return <Card key={food_cards.id} className='food_card'>
+                    <Card.Img variant="top" className='food_card_img' src={food_cards.image} />
+                    {food_cards.discount ? <Card.ImgOverlay>
+                      <Card.Title className='ribbon'><span>{food_cards.discount}</span></Card.Title>
+                    </Card.ImgOverlay> : ''}
+
+                    <Card.Body className='food_card_body'>
+                      <Card.Title className='food_card_title'>{food_cards.title}</Card.Title>
                       <Card.Text>
-                        Some quick example text to build on the card title and make up the
-                        bulk of the card's content.
+                        <h6 className='food_price'>{food_cards.price}</h6>
+                        <del className='cut_price'>Rs 500</del>
+                        <Button className='add'>ADD</Button>
                       </Card.Text>
                     </Card.Body>
-                    <Card.Body>
-                      <Card.Link href="#">Card Link</Card.Link>
-                      <Card.Link href="#">Another Link</Card.Link>
-                    </Card.Body>
                   </Card>
-                </Item>  
-              })
-            }
-         </Carousel>
+                })
+              }
+            </Carousel>
           </div>
         </Row>
 
+        <Row className='popular_food_row'>
+          <Col xs={11}>
+            <h5>Breakfast Items</h5>
+          </Col>
+          <Col xs={1}>
+            <h5>See All</h5>
+          </Col>
+          <div className='popular_food_row'>
+            <Carousel itemsToShow={4}>
+              {
+                breakfast_cards.map((breakfast_cards) => {
+                  return <Card key={breakfast_cards.id} className='food_card'>
+                    <Card.Img variant="top" className='food_card_img' src={breakfast_cards.image} />
+                    {breakfast_cards.discount ? <Card.ImgOverlay>
+                      <Card.Title className='ribbon'><span>{breakfast_cards.discount}</span></Card.Title>
+                    </Card.ImgOverlay> : ''}
+                    <Card.Body className='food_card_body'>
+                      <Card.Title className='food_card_title'>{breakfast_cards.title}</Card.Title>
+                      <Card.Text>
+                        <h6 className='food_price'>{breakfast_cards.price}</h6>
+                        <del className='cut_price'>Rs 500</del>
+                        <Button className='add'>ADD</Button>
+                      </Card.Text>
+                    </Card.Body>
+                  </Card>
+                })
+              }
+            </Carousel>
+          </div>
+        </Row>
+        <Row className='popular_food_row'>
+          <Col xs={11}>
+            <h5>Drink Items</h5>
+          </Col>
+          <Col xs={1}>
+            <h5>See All</h5>
+          </Col>
+          <div className='popular_food_row'>
+            <Carousel itemsToShow={4}>
+              {
+                drink_cards.map((drink_cards) => {
+                  return <Card key={drink_cards.id} className='food_card'>
+                    <Card.Img variant="top" className='food_card_img' src={drink_cards.image} />
+                    {drink_cards.discount ? <Card.ImgOverlay>
+                      <Card.Title className='ribbon'><span>{drink_cards.discount}</span></Card.Title>
+                    </Card.ImgOverlay> : ''}
+                    <Card.Body className='food_card_body'>
+                      <Card.Title className='food_card_title'>{drink_cards.title}</Card.Title>
+                      <Card.Text>
+                        <h6 className='food_price'>{drink_cards.price}</h6>
+                        <del className='cut_price'>Rs 500</del>
+                        <Button className='add'>ADD</Button>
+                      </Card.Text>
+                    </Card.Body>
+                  </Card>
+                })
+              }
+            </Carousel>
+          </div>
+        </Row>
+        <h5 className='pt-4'>Popular Delicacies</h5>
+        <Row className='popular_delic_row'>
+          <Col xs={5}>
+            <Image src="./uploads/Delicimg.png" alt="Your Image" className="img-fluid delic_img" />
+          </Col>
+          <Col xs={7}>
+            <h6 style={{ paddingTop: '13px', fontSize: '18px', fontWeight: 'bold' }}>
+              Simple, tasty and very healthy<br></br>
+              vegetable and egg salad
+            </h6>
+            <h6 style={{ paddingTop: '17px' }}>Recipe:</h6>
+            <p className='delic_prgh'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pharetra ut bibendum fringilla morbi at ac rhoncus nunc. Sed eu malesuada fusce velit. Nibh in quis at tincidunt iaculis. At magna mattis donec bibendum odio. Id et blandit iaculis lectus pellentesque at aliquet odio commodo. Quis cursus facilisis lobortis hendrerit augue mauris arcu rhoncus. Malesuada sed feugiat consequat, tellus posuere nam nam. Sapien, sit sapien risus, tristique egestas. Nullam feugiat dignissim odio pretium auctor. Ut at tempor, lacinia pellentesque neque lacinia. Justo nulla libero vestibulum aliquam blandit volutpat pretium posuere tristique. Risus dictum turpis bibendum cursus justo, mauris massa, dignissim.
+            </p>
+            <div className='d-flex'>
+            <Button className='readmore'>Read Completely</Button>
+            <p className='justify-content-end quantity'>Quantity <i class="fa-solid fa-minus"></i> 2 <i class="fa-solid fa-plus"></i></p>
+            </div>
+           
+          </Col>
+        </Row>
       </Container>
       <Footer />
     </>

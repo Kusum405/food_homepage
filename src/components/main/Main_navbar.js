@@ -2,7 +2,7 @@ import React from 'react';
 import "./main.css";
 import { Navbar, Nav, Container } from 'react-bootstrap';
 import Secondary_navbar from './Secondary_navbar';
-import { Form, FormControl, Button } from 'react-bootstrap';
+import { Form, FormControl,Badge,Button } from 'react-bootstrap';
 
 const Main_navbar = () => {
     return (
@@ -18,14 +18,18 @@ const Main_navbar = () => {
                             <Nav.Link className='num'><i class="fa-solid fa-phone"></i> 9874645645</Nav.Link>
                             <Nav.Link className='address'><i class="fa-solid fa-location-dot"></i> Kathmandu,Nepal  <i class="fa-solid fa-caret-down"></i> </Nav.Link>
                         </Nav>
-                        <Button><i className="fas fa-search searchbtn"></i></Button>
-                        <Form inline className="d-flex align-items-center">     
+                        {/* <div className='wrapper'>
+                        <i className="fas fa-search searchbtn"></i> */}
+                        <Form inline className="d-flex align-items-center search">     
                             <FormControl type="text" placeholder="Search" className="rounded-pill searchfield" />
                         </Form>
+                        {/* </div> */}
+                        
                         
                         <Nav className="mr-auto">
-                        <Nav.Link className=''>Login</Nav.Link>
-                        <i class="fa-regular fa-basket-shopping-simple"></i>
+                        <Nav.Link className='login'>Login</Nav.Link>
+                        <i class="fa-solid fa-cart-shopping"></i>
+                       <div class='notification'> <h6 className='note'>22</h6></div>
                         </Nav>
                     </Navbar.Collapse>
                 </Container>
