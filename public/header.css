@@ -9,10 +9,10 @@ body{
 
     --secondary-nav-color:  #1D262A;
     --light-yellow: #e0a22e;
-    --yellow-color: #ffe713;
+    --yellow-color: #FCBC08;
     --light-pink: hsl(313, 100%, 82%);
     --brown-color: #926228;
-    --first-color-alt: #9ceaf7;
+    --slider-color: #FCE5C0;
     --white-color: ##D9D9D9;
     --full-white: white;
     --full-black: black;
@@ -21,5 +21,6 @@ body{
     --body-color: #F3F3F3;
     --delete-color: #f70039;
     --tab-color: #f5f5f5;
+
 
 }

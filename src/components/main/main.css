@@ -58,7 +58,7 @@
 }
 
 .searchfield {
-    width: 522px;
+    /* width: 522px; */
 }
 
 .searchbtn {
@@ -69,33 +69,37 @@
 }
 
 /* -------------------------------------Banner-Section--------------------------------------- */
-
+/* .main{
+    height: 100%;
+} */
 .top_image {
     padding-top: 31px;
     padding-bottom: 40px;
 }
 
 /* -------------------------------------Coupon-Section--------------------------------------- */
-.rect_row{
+.rect_row {
     padding-top: 20px;
+    padding-bottom: 45px;
 }
+
 .rect_one {
     border-radius: 10px;
     margin-right: 29px;
     width: 250px;
     height: 100px;
-    background-color: var( --yellow-color);
+    background-color: var(--yellow-color);
 }
 
-.rect_two{
+.rect_two {
     border-radius: 10px;
     margin-right: 29px;
     width: 250px;
     height: 100px;
-    background-color:var(--light-yellow);
+    background-color: var(--light-yellow);
 }
 
-.rect_three{
+.rect_three {
     border-radius: 10px;
     margin-right: 29px;
     width: 250px;
@@ -103,7 +107,7 @@
     background-color: var(--brown-color);
 }
 
-.rect_four{
+.rect_four {
     border-radius: 10px;
     margin-right: 29px;
     width: 250px;
@@ -115,38 +119,40 @@
     width: 43px;
     height: 43px;
     border-radius: 50% 50% 50% 50%;
-    background-color: var( --body-color);
+    background-color: var(--body-color);
     position: absolute;
     margin-top: 29px;
     margin-left: -15px;
 }
-.back-circle{
+
+.back-circle {
     margin-left: 228px;
     width: 43px;
     height: 43px;
     border-radius: 50% 50% 50% 50%;
-    background-color: var( --body-color);
+    background-color: var(--body-color);
     position: absolute;
     margin-top: 3px;
 }
 
-.discount{
+.discount {
     padding-left: 70px;
     font-size: 30px;
     margin-top: -18px;
     color: var(--full-white);
 }
 
-.code{
+.code {
     margin-top: 56px;
     margin-left: -132px;
     color: var(--full-white);
 }
 
-.code_font{
+.code_font {
     font-size: 10px !important;
 }
-.copy_code{
+
+.copy_code {
     margin-left: 48px;
     margin-top: 55px;
     background-color: var(--light-black);
@@ -157,6 +163,223 @@
     padding-bottom: 0px;
 }
 
-.code_copy{
+.code_copy {
     font-size: 10px !important;
+}
+
+/* -------------------------------------Catalog-delicacies-Section--------------------------------------- */
+
+.catalog_row {
+    padding-top: 20px;
+}
+
+.card_row {
+    height: 112px;
+    width: 146px;
+    margin-bottom: 30px !important;
+}
+
+.card_title {
+    margin-top: 6px;
+    font-size: 11px;
+    text-align: center;
+}
+
+/* -------------------------------------Slider-Section--------------------------------------- */
+.sider_row {
+    padding-top: 50px;
+    padding-bottom: 40px;
+}
+
+.fa-chevron-left {
+    font-size: 14px;
+    background-color: var(--brown-color);
+    color: var(--full-white);
+    border-radius: 50%;
+    padding: 8px;
+}
+
+.fa-chevron-right {
+    font-size: 14px;
+    background-color: var(--brown-color);
+    color: var(--full-white);
+    border-radius: 50%;
+    padding: 8px;
+}
+
+.slider {
+    background-color: var(--slider-color);
+    height: 350px;
+    border-radius: 10px;
+}
+
+.delicacies {
+    padding-top: 42px;
+    padding-left: 19px;
+    font-weight: 600;
+}
+
+.grilled_lamb {
+    padding-left: 19px;
+    font-size: 46px;
+    font-weight: bold;
+    color: var(--yellow-color);
+}
+
+.delicacy_pgh {
+    color: var(--light-black);
+    font-size: 14px;
+    padding-left: 19px;
+}
+
+.add_to_cart {
+    font-size: 13px;
+    margin-left: 19px;
+    background-color: var(--brown-color);
+    border-radius: 20px;
+    border-color: var(--brown-color);
+
+}
+
+.food {
+    height: 287px;
+    width: auto;
+    margin-top: 40px;
+    margin-left: 143px;
+}
+/* -------------------------------------Best-Deal-Section--------------------------------------- */
+.specialpizza{
+    width: 347px;
+    height: auto;
+    margin-right: 27px;
+    padding-top: 20px;
+}
+.burger{
+    width: 347px;
+    height: auto;
+    margin-right: 27px;
+    padding-top: 20px;
+}
+.weekendfood{
+    width: 349px;
+    height: 262px;
+    /* margin-right: 27px; */
+    padding-top: 20px;
+}
+/* -------------------------------------Popular-Food-Section--------------------------------------- */
+.popular_food_row{
+    padding-top: 40px;
+}
+
+/* -------------------------------------Footer-Section--------------------------------------- */
+footer {
+    background-color: var(--secondary-nav-color);
+    padding-top: 50px;
+}
+
+.footer_title {
+    font-size: 18px;
+    color: var(--full-white);
+    font-weight: 600;
+}
+
+.footer_lists {
+    padding-bottom: 37px;
+    font-size: 12px;
+    color: var(--full-white);
+    list-style: none !important;
+    margin-left: -28px;
+}
+
+.lists {
+    padding-top: 3px;
+}
+
+.payment_row {
+    padding-top: 17px;
+    /* background-color: var(--full-white); */
+}
+
+.esewa_rect {
+    width: 190px;
+    height: 60px;
+    background-color: var(--full-white);
+    display: flex;
+    flex-direction: row;
+    border-radius: 10px;
+    margin-right: 20px;
+}
+
+.esewa_img {
+    height: 44px;
+    width: 44px;
+    margin-top: 8px;
+    margin-left: 11px;
+}
+
+.ime_img {
+    height: 34px;
+    width: 34px;
+    margin-top: 11px;
+    margin-left: 11px;
+}
+
+.name {
+    font-size: 13px;
+    padding-top: 13px;
+    padding-left: 10px;
+}
+
+.process {
+    padding-top: 30px;
+    font-size: 10px;
+    margin-left: -37px;
+    color: var(--secondary-color);
+}
+
+.ime_process {
+    padding-top: 30px;
+    font-size: 10px;
+    margin-left: -45px;
+    color: var(--secondary-color);
+}
+
+.last_footer {
+    margin-top: 39px;
+    padding-top: 20px;
+    padding-bottom: 25px;
+    border-top: 1px solid var(--secondary-color);
+}
+
+.copyright {
+    color: var(--full-white);
+    font-size: 14px;
+}
+
+.foot_link {
+    margin-top: -7px;
+}
+
+.foot_link a {
+    font-size: 14px;
+    text-decoration: none !important;
+    color: var(--full-white);
+}
+
+.social {
+    margin-top: -11px;
+    font-size: 23px;
+}
+
+.fa-facebook {
+    color: var(--yellow-color);
+}
+
+
+.fa-instagram {
+    color: var(--yellow-color) !important;
+}
+
+.fa-linkedin {
+    color: var(--yellow-color) !important;
 }
