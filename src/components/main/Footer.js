@@ -7,9 +7,6 @@ const Footer = () => {
         <footer>
             <Container>
                 <Row>
-                    {/* <Col md={3}>
-                            <Image src="logo.png" alt="Company Logo" style={{ width: '100%' }} />
-                        </Col> */}
                     <Col md={6}>
                         <h5 className='footer_title'>Categories</h5>
                         <Row>
@@ -28,7 +25,7 @@ const Footer = () => {
                                 </ul>
                             </Col>
                             <Col md={6}>
-                                <ul className='footer_lists'>
+                                <ul className='sec_footer_lists'>
                                     <li className='lists'>Dessert</li>
                                     <li className='lists'>Oven Baked Dishes</li>
                                     <li className='lists'>Bottle Pickle Chilly</li>
@@ -48,7 +45,7 @@ const Footer = () => {
                         <h5 className='footer_title'>Useful Links</h5>
                         <Row>
                             <Col md={4}>
-                                <ul className='footer_lists'>
+                                <ul className='third_footer_lists'>
                                     <li className='lists'>About</li>
                                     <li className='lists'>Careers</li>
                                     <li className='lists'>Blog</li>
@@ -58,7 +55,7 @@ const Footer = () => {
                                 </ul>
                             </Col>
                             <Col md={4}>
-                                <ul className='footer_lists'>
+                                <ul className='four_footer_lists'>
                                     <li className='lists'>Privacy</li>
                                     <li className='lists'>Terms</li>
                                     <li className='lists'>FAQs</li>
@@ -68,7 +65,7 @@ const Footer = () => {
                                 </ul>
                             </Col>
                             <Col md={4}>
-                                <ul className='footer_lists'>
+                                <ul className='five_footer_lists'>
                                     <li className='lists'>Partner</li>
                                     <li className='lists'>Express</li>
                                     <li className='lists'>Local</li>
@@ -114,7 +111,7 @@ const Footer = () => {
                     </Col>
                     <Col md={2}>
                         <div className='social'>
-                        <i className="fa-brands fa-facebook"></i> <i class="fa-brands fa-instagram"></i>  <i class="fa-brands fa-linkedin"></i>
+                        <i className="fa-brands fa-facebook"></i> <i className="fa-brands fa-instagram"></i>  <i className="fa-brands fa-linkedin"></i>
                         </div>
                     
                     </Col>

@@ -15,8 +15,8 @@ const Main_navbar = () => {
                     <Navbar.Toggle aria-controls="basic-navbar-nav" />
                     <Navbar.Collapse id="basic-navbar-nav">
                         <Nav className="mr-auto main_nav_link">
-                            <Nav.Link className='num'><i class="fa-solid fa-phone"></i> 9874645645</Nav.Link>
-                            <Nav.Link className='address'><i class="fa-solid fa-location-dot"></i> Kathmandu,Nepal  <i class="fa-solid fa-caret-down"></i> </Nav.Link>
+                            <Nav.Link className='num'><i className="fa-solid fa-phone"></i> 9874645645</Nav.Link>
+                            <Nav.Link className='address'><i className="fa-solid fa-location-dot"></i> Kathmandu,Nepal  <i className="fa-solid fa-caret-down"></i> </Nav.Link>
                         </Nav>
                         {/* <div className='wrapper'>
                         <i className="fas fa-search searchbtn"></i> */}
@@ -28,7 +28,7 @@ const Main_navbar = () => {
                         
                         <Nav className="mr-auto">
                         <Nav.Link className='login'>Login</Nav.Link>
-                        <i class="fa-solid fa-cart-shopping"></i>
+                        <i className="fa-solid fa-cart-shopping"></i>
                        <div class='notification'> <h6 className='note'>22</h6></div>
                         </Nav>
                     </Navbar.Collapse>

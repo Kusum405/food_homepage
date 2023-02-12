@@ -37,6 +37,12 @@ const Landingpage = () => {
       code: "MONY20",
       class_name: "rect_four"
     },
+    {
+      id: 5,
+      discount: "5% OFF",
+      code: "MONY20",
+      class_name: "rect_four"
+    },
   ]
 
   const catalog_delicacies = [
@@ -291,35 +297,37 @@ const Landingpage = () => {
         <Image src="./uploads/bannerimage.png" alt="Your Image" className="img-fluid top_image" />
         <h5>Coupon Code</h5>
         <div className="d-flex flex-wrap rect_row">
-          {
-            coupon.map((coupon) => {
-              return <div key={coupon.id}>
-                <div className='front-circle'>
+          <Carousel itemsToShow={4}>
+            {
+              coupon.map((coupon) => {
+                return <div key={coupon.id}>
+                  <div className='front-circle'>
+
+                  </div>
+                  <div className={`${coupon.class_name} d-flex align-items-center`}>
+                    <div>
+                      <h6 className='discount'> {coupon.discount}</h6>
+                    </div>
+                    <div className='code'>
+                      <h6 className='code_font'>Code:<br></br>{coupon.code}</h6>
+                    </div>
+                    <div className='copy_code'>
+                      <h6 className='code_copy'>Copy Code</h6>
+                    </div>
+                    <div className='back-circle'>
+
+                    </div>
+                  </div>
 
                 </div>
-                <div className={`${coupon.class_name} d-flex align-items-center`}>
-                  <div>
-                    <h6 className='discount'> {coupon.discount}</h6>
-                  </div>
-                  <div className='code'>
-                    <h6 className='code_font'>Code:<br></br>{coupon.code}</h6>
-                  </div>
-                  <div className='copy_code'>
-                    <h6 className='code_copy'>Copy Code</h6>
-                  </div>
-                  <div className='back-circle'>
-
-                  </div>
-                </div>
-
-              </div>
-            })
-          }
+              })
+            }
+          </Carousel>
         </div>
         <h5>Catalog sections<br></br>delicacies</h5>
         <Row className="catalog_row">
           {catalog_delicacies.map(catalogs => (
-            <div key={catalogs.id} className="m-2 card_row">
+            <div key={catalogs.id} className="card_row">
               <Card>
                 <Card.Img src={catalogs.image} alt={catalogs.title} />
               </Card>
@@ -362,11 +370,11 @@ const Landingpage = () => {
           }
         </div>
         <Row className='popular_food_row'>
-          <Col xs={11}>
+          <Col xs={10}>
             <h5>Popular Foods</h5>
           </Col>
-          <Col xs={1}>
-            <h5>See All</h5>
+          <Col xs={2}>
+            <h5 className='see_all'>See All</h5>
           </Col>
           <div className='popular_food_row'>
             <Carousel itemsToShow={4}>
@@ -381,8 +389,8 @@ const Landingpage = () => {
                     <Card.Body className='food_card_body'>
                       <Card.Title className='food_card_title'>{food_cards.title}</Card.Title>
                       <Card.Text>
-                        <h6 className='food_price'>{food_cards.price}</h6>
-                        <del className='cut_price'>Rs 500</del>
+                        <h6 className='food_price'>{food_cards.price}</h6><br></br>
+                        <p className='cut_price'><del>Rs 500</del></p>
                         <Button className='add'>ADD</Button>
                       </Card.Text>
                     </Card.Body>
@@ -394,11 +402,11 @@ const Landingpage = () => {
         </Row>
 
         <Row className='popular_food_row'>
-          <Col xs={11}>
+          <Col xs={10}>
             <h5>Breakfast Items</h5>
           </Col>
-          <Col xs={1}>
-            <h5>See All</h5>
+          <Col xs={2}>
+            <h5 className='see_all'>See All</h5>
           </Col>
           <div className='popular_food_row'>
             <Carousel itemsToShow={4}>
@@ -412,8 +420,8 @@ const Landingpage = () => {
                     <Card.Body className='food_card_body'>
                       <Card.Title className='food_card_title'>{breakfast_cards.title}</Card.Title>
                       <Card.Text>
-                        <h6 className='food_price'>{breakfast_cards.price}</h6>
-                        <del className='cut_price'>Rs 500</del>
+                        <h6 className='food_price'>{breakfast_cards.price}</h6><br></br>
+                        <p className='cut_price'><del>Rs 500</del></p>
                         <Button className='add'>ADD</Button>
                       </Card.Text>
                     </Card.Body>
@@ -424,11 +432,11 @@ const Landingpage = () => {
           </div>
         </Row>
         <Row className='popular_food_row'>
-          <Col xs={11}>
+          <Col xs={10}>
             <h5>Drink Items</h5>
           </Col>
-          <Col xs={1}>
-            <h5>See All</h5>
+          <Col xs={2}>
+            <h5 className='see_all'>See All</h5>
           </Col>
           <div className='popular_food_row'>
             <Carousel itemsToShow={4}>
@@ -442,8 +450,8 @@ const Landingpage = () => {
                     <Card.Body className='food_card_body'>
                       <Card.Title className='food_card_title'>{drink_cards.title}</Card.Title>
                       <Card.Text>
-                        <h6 className='food_price'>{drink_cards.price}</h6>
-                        <del className='cut_price'>Rs 500</del>
+                        <h6 className='food_price'>{drink_cards.price}</h6><br></br>
+                        <p className='cut_price'><del>Rs 500</del></p>
                         <Button className='add'>ADD</Button>
                       </Card.Text>
                     </Card.Body>
@@ -459,18 +467,18 @@ const Landingpage = () => {
             <Image src="./uploads/Delicimg.png" alt="Your Image" className="img-fluid delic_img" />
           </Col>
           <Col xs={7}>
-            <h6 style={{ paddingTop: '13px', fontSize: '18px', fontWeight: 'bold' }}>
+            <h6 className='rec_title'>
               Simple, tasty and very healthy<br></br>
               vegetable and egg salad
             </h6>
-            <h6 style={{ paddingTop: '17px' }}>Recipe:</h6>
+            <h6 className='recipe'>Recipe:</h6>
             <p className='delic_prgh'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pharetra ut bibendum fringilla morbi at ac rhoncus nunc. Sed eu malesuada fusce velit. Nibh in quis at tincidunt iaculis. At magna mattis donec bibendum odio. Id et blandit iaculis lectus pellentesque at aliquet odio commodo. Quis cursus facilisis lobortis hendrerit augue mauris arcu rhoncus. Malesuada sed feugiat consequat, tellus posuere nam nam. Sapien, sit sapien risus, tristique egestas. Nullam feugiat dignissim odio pretium auctor. Ut at tempor, lacinia pellentesque neque lacinia. Justo nulla libero vestibulum aliquam blandit volutpat pretium posuere tristique. Risus dictum turpis bibendum cursus justo, mauris massa, dignissim.
             </p>
-            <div className='d-flex'>
-            <Button className='readmore'>Read Completely</Button>
-            <p className='justify-content-end quantity'>Quantity <i class="fa-solid fa-minus"></i> 2 <i class="fa-solid fa-plus"></i></p>
+            <div className=''>
+              <Button className='readmore'>Read Completely</Button>
+              <p className='justify-content-end quantity'>Quantity <i className="fa-solid fa-minus"></i> 2 <i className="fa-solid fa-plus"></i></p>
             </div>
-           
+
           </Col>
         </Row>
       </Container>
